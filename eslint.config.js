@@ -1,5 +1,4 @@
 import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
 
 export default [
   {
@@ -12,6 +11,8 @@ export default [
     ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**'],
   },
 
+
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
 ]
+

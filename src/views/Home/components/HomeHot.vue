@@ -14,11 +14,11 @@ onMounted(() => getNewList())
 </script>
 
 <template>
-  <HomePanel title="人气推荐" sub-title="人气推荐 品质靠谱">
+  <HomePanel title="人气推荐" sub-title="人气爆款 不容错过">
     <ul class="goods-list">
     <li v-for="item in newList" :key="item.id">
       <RouterLink to="/">
-        <img :src="item.picture"  />
+        <img v-img-lazy="item.picture" />
         <p class="name">{{ item.title }}</p>
         <p class="price">{{ item.alt }}</p>
       </RouterLink>
@@ -50,7 +50,7 @@ onMounted(() => getNewList())
     width: 306px;
     height: 406px;
 
-    background: #f0f9f4;
+    background: white;
     transition: all .5s;
 
     &:hover {
@@ -73,7 +73,7 @@ onMounted(() => getNewList())
     }
 
     .price {
-      color: $priceColor;
+      color: gray;
     }
   }
 }

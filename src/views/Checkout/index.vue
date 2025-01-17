@@ -34,7 +34,7 @@ const confirm =()=>{
 }
 
 //创建订单
-const createOder =async ()=>{
+const createOrder =async ()=>{
   const res =await createOrderAPI({
     deliveryTimeType:1,
     payType:1,
@@ -152,7 +152,7 @@ const createOder =async ()=>{
         </div>
         <!-- 提交订单 -->
         <div class="submit">
-          <el-button @click="createOder" type="primary" size="large" >提交订单</el-button>
+          <el-button @click="createOrder" type="primary" size="large" >提交订单</el-button>
         </div>
       </div>
     </div>

@@ -11,8 +11,8 @@ import { useUserStore } from '@/stores/user'
 const userStore =useUserStore()
 //1.准备表单对象
 const form =ref({
-  account:'xiaotuxian001',
-  password:'123456',
+  account:'heima292',
+  password:'hm#qd@23!',
   agree:true
 })
 

@@ -1,6 +1,6 @@
 # vue3-work
 
-This template should help get you started developing with Vue 3 in Vite.
+电商实战项目
 
 ## Recommended IDE Setup
 
